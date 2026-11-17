@@ -85,27 +85,65 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Featured Project */}
+      
+      {/* Featured Projects */}
       <section id="projects" className="mx-auto max-w-7xl px-6 py-24">
         <p className="text-sm font-medium uppercase tracking-widest text-gray-500">
-          Featured Project
+          Featured Projects
         </p>
 
-        <div className="mt-8 border border-gray-200 p-8 md:p-12">
-          <p className="text-sm uppercase tracking-widest text-gray-500">
-            Quantifying Welfare
-          </p>
+        <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight">
+          Research exploring the forces that shape our world.
+        </h2>
 
-          <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight md:text-4xl">
-            Measuring how economic, environmental, and spatial conditions
-            shape quality of life.
-          </h2>
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
 
-          <p className="mt-6 max-w-2xl leading-7 text-gray-600">
-            An ongoing research project developing tools and methods for
-            understanding welfare across places and communities.
-          </p>
+          {/* Project 1: Quantifying Welfare */}
+          <div className="border border-gray-200 p-8 md:p-10">
+            <p className="text-sm uppercase tracking-widest text-gray-500">
+              Urban Economics · Research
+            </p>
+
+            <h3 className="mt-5 text-2xl font-semibold tracking-tight">
+              Quantifying Welfare
+            </h3>
+
+            <p className="mt-5 leading-7 text-gray-600">
+              Measuring how economic, environmental, and spatial
+              conditions shape quality of life. An ongoing research
+              project developing tools and methods for understanding
+              welfare across places and communities.
+            </p>
+
+            <p className="mt-8 text-sm text-gray-500">
+              Research in development
+            </p>
+          </div>
+
+          {/* Project 2: The Politics of Sugar */}
+          <a
+            href="/projects/sugar-power"
+            className="group block border border-gray-200 p-8 transition-all duration-200 hover:border-amber-600 hover:shadow-lg md:p-10"
+          >
+            <p className="text-sm uppercase tracking-widest text-amber-700">
+              Political Economy · Social Network Analysis
+            </p>
+
+            <h3 className="mt-5 text-2xl font-semibold tracking-tight">
+              The Politics of Sugar
+            </h3>
+
+            <p className="mt-5 leading-7 text-gray-600">
+              Who benefits, who pays, and who holds power?
+              Investigating the institutions, economic interests,
+              and political networks behind U.S. sugar protections.
+            </p>
+
+            <p className="mt-8 text-sm font-semibold text-amber-700 group-hover:underline">
+              Explore the Research →
+            </p>
+          </a>
+
         </div>
       </section>
 
