@@ -100,7 +100,7 @@ export default function SugarPowerPage() {
           </Link>
           <nav aria-label="Project navigation" className="flex flex-wrap gap-5 text-xs font-medium text-[#53636A] sm:text-sm">
             <a href="#research" className="hover:text-[#162630]">Research</a>
-            <a href="#network" className="hover:text-[#162630]">Network</a>
+            <a href="/projects/sugar-power/network" className="hover:text-[#162630]">Explore the Interactive Network</a>
             <a href="#history" className="hover:text-[#162630]">History</a>
             <a href="#methods" className="hover:text-[#162630]">Methods</a>
             <a href="#behavior" className="hover:text-[#162630]">Consumer Behavior</a>
