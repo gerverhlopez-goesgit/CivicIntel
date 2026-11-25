@@ -103,6 +103,7 @@ export default function SugarPowerPage() {
             <a href="#network" className="hover:text-[#162630]">Network</a>
             <a href="#history" className="hover:text-[#162630]">History</a>
             <a href="#methods" className="hover:text-[#162630]">Methods</a>
+            <a href="#behavior" className="hover:text-[#162630]">Consumer Behavior</a>
           </nav>
         </div>
       </header>
@@ -266,6 +267,68 @@ export default function SugarPowerPage() {
               <p className="mt-2 text-sm text-[#526169]">{source.topic}</p>
             </a>
           ))}
+        </div>
+      </section>
+
+      {/* Related Research: Behavioral Economics */}
+      <section
+        id="behavior"
+        className="border-t border-[#DAD4C8] bg-[#F7F4ED] px-6 py-20"
+      >
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#8C6B3E]">
+            Related Research / Behavioral Economics
+          </p>
+
+          <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
+            The Behavioral Economics of Sugar
+          </h2>
+
+          <p className="mt-6 max-w-3xl leading-8 text-[#4B5C63]">
+            Sugar consumption is shaped not only by prices and
+            government policy, but also by the environments in
+            which consumers make purchasing decisions.
+          </p>
+
+          <div className="mt-10 rounded-xl border border-[#DAD4C8] bg-white p-8">
+            <p className="text-sm font-medium text-[#8C6B3E]">
+              Featured Research · Cardinali et al. (2026)
+            </p>
+
+            <h3 className="mt-3 text-2xl font-semibold">
+              Temptation &amp; Limited Attention
+            </h3>
+
+            <p className="mt-5 text-4xl font-semibold text-[#63867A]">
+              17%
+            </p>
+
+            <p className="mt-2 text-sm text-[#526169]">
+              Relative decline in single-serving candy sales share
+              following self-checkout adoption.
+            </p>
+
+            <p className="mt-6 leading-7 text-[#526169]">
+              Research using supermarket transaction data finds
+              that the adoption of self-checkout is associated with
+              fewer impulse candy purchases. The evidence is
+              consistent with limited attention reducing temptation.
+            </p>
+
+            <p className="mt-4 text-sm text-[#526169]">
+              Working paper · April 2026 · Not peer-reviewed
+              · Transaction data from 2008–2011
+            </p>
+
+            <a
+              href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6809309"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-block font-semibold text-[#8C6B3E] underline underline-offset-4"
+            >
+              Read the Research Paper ↗
+            </a>
+          </div>
         </div>
       </section>
 
