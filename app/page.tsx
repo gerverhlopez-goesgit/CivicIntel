@@ -42,7 +42,7 @@ const navigation = [
   { label: "Networks", href: "#networks" },
   { label: "Research", href: "#research" },
   { label: "Data & Methods", href: "#data" },
-  { label: "About", href: "#about" },
+  { label: "About", href: "/about" },
 ];
 
 function ArrowIcon({ diagonal = false }: { diagonal?: boolean }) {
@@ -317,7 +317,8 @@ export default function Home() {
             <a href="#projects" className="hover:text-[#E0B77B]">Projects</a>
             <a href="#networks" className="hover:text-[#E0B77B]">Networks</a>
             <a href="#data" className="hover:text-[#E0B77B]">Data & methods</a>
-            <a href="#about" className="hover:text-[#E0B77B]">About</a>
+            <a href="/about" className="mt-6 inline-flex items-center rounded-full bg-[#142D38] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#254957]"> Meet the team and our mission →
+</a>
           </nav>
         </div>
       </footer>
