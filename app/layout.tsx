@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
 
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "CivicIntel | Making Invisible Systems Visible",
     description:
       "Independent research making complex economic, political, and institutional networks visible.",
