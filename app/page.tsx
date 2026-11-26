@@ -94,7 +94,7 @@ function HeroNetwork() {
         <circle cx="270" cy="215" r="45" fill="#D4AB72" />
         <text x="270" y="220" fill="#10232D" fontSize="15" fontWeight="700" textAnchor="middle">CivicIntel</text>
       </svg>
-      <p className="absolute bottom-1 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] uppercase tracking-[0.18em] text-[#88A2A7]">
+      <p className="mt-3 text-center text-[10px] uppercase leading-relaxed tracking-[0.18em] text-[#88A2A7]">
         An illustration of interconnected systems
       </p>
     </div>
@@ -201,10 +201,10 @@ export default function Home() {
           </div>
         </div>
         <div className="border-t border-[#344B55]">
-          <div className="mx-auto flex max-w-7xl flex-wrap gap-x-12 gap-y-4 px-5 py-5 text-xs uppercase tracking-[0.16em] text-[#9BB5BC] sm:px-8">
-            <span><strong className="mr-2 text-base font-semibold text-[#E0B77B]">02</strong>Interactive networks</span>
-            <span><strong className="mr-2 text-base font-semibold text-[#E0B77B]">03</strong>Research projects</span>
-            <span>Source-aware · Evidence-first</span>
+          <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-4 px-5 py-5 text-center text-xs uppercase tracking-[0.16em] text-[#9BB5BC] sm:grid-cols-3 sm:gap-6 sm:px-8">
+            <span className="flex items-baseline justify-center gap-2"><strong className="text-base font-semibold text-[#E0B77B]">02</strong>Interactive networks</span>
+            <span className="flex items-baseline justify-center gap-2"><strong className="text-base font-semibold text-[#E0B77B]">03</strong>Research projects</span>
+            <span className="flex items-center justify-center">Source-aware · Evidence-first</span>
           </div>
         </div>
       </section>
