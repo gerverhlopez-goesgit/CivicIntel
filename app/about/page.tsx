@@ -319,7 +319,6 @@ export default function AboutPage() {
                 <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8C713D]">Engineering & systems</span>
               </div>
               <h3 className="mt-8 font-serif text-3xl leading-tight">Chemical Engineering & Technical Systems</h3>
-              <p className="mt-4 text-sm font-semibold leading-7 text-[#35505B]">Chemical Engineering - UC Berkeley</p>
               <p className="mt-5 leading-8 text-[#52646B]">
                 This perspective contributes foundations in physical and industrial processes, material and energy balances, technical feasibility, and the constraints that shape real-world solutions.
               </p>
