@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Civic Intelligence Lab",
   description:
-    "Meet CivicIntel, an independent student-led research initiative combining political economy, environmental economics, and chemical engineering to make complex systems understandable.",
+    "Meet CivicIntel, an independent student led research initiative combining political economy, environmental economics, and chemical engineering to make complex systems understandable.",
   openGraph: {
     title: "About Civic Intelligence Lab | CivicIntel",
     description:
