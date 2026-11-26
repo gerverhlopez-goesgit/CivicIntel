@@ -1,0 +1,1152 @@
+{
+  "dataset": "CivicIntel / The Homelessness System",
+  "version": "0.1",
+  "compiled_date": "2026-11-26",
+  "scope": "Alameda County including Oakland and Berkeley; California and federal connections",
+  "caveats": [
+    "Not every relationship is a money transfer.",
+    "Allocations are not spending, obligations, disbursements, or outcome measures.",
+    "The FY2025-26 Home Together amount and HHAP round allocations are separate funds; do not sum as total homelessness spending.",
+    "The 2026 HHAP6 regional award is not split among its three joint participants.",
+    "Alameda County Measure W and Berkeley Measure W are DIFFERENT taxes.",
+    "Provider listings and procurement solicitations do not imply contracts.",
+    "Do not infer conflicts of interest or undue influence from graph centrality.",
+    "No personal service-recipient data should be included."
+  ],
+  "nodes": [
+    {
+      "id": "hud",
+      "label": "U.S. Department of Housing and Urban Development",
+      "kind": "government",
+      "group": "federal",
+      "description": "Federal CoC program administrator",
+      "research_focus": "government",
+      "source_ids": [
+        "S13"
+      ]
+    },
+    {
+      "id": "hcd",
+      "label": "California Department of Housing and Community Development",
+      "kind": "government",
+      "group": "state",
+      "description": "Administers California HHAP funding rounds",
+      "research_focus": "government",
+      "source_ids": [
+        "S01",
+        "S02",
+        "S14"
+      ]
+    },
+    {
+      "id": "alameda_county",
+      "label": "Alameda County",
+      "kind": "government",
+      "group": "county",
+      "description": "County HHAP eligible jurisdiction and coordinating government",
+      "research_focus": "government",
+      "source_ids": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "county_bos",
+      "label": "Alameda County Board of Supervisors",
+      "kind": "governance",
+      "group": "county",
+      "description": "County legislative body allocating FY2025-26 Home Together funding",
+      "research_focus": "governance",
+      "source_ids": [
+        "S03"
+      ]
+    },
+    {
+      "id": "county_hh",
+      "label": "Alameda County Health — Housing and Homelessness Services",
+      "kind": "government",
+      "group": "county",
+      "description": "Countywide housing and homelessness systems coordination, HMIS and Coordinated Entry management",
+      "research_focus": "government",
+      "source_ids": [
+        "S05",
+        "S07"
+      ]
+    },
+    {
+      "id": "county_oversight",
+      "label": "Alameda County Measures A/C/W Citizen Oversight Committee",
+      "kind": "oversight",
+      "group": "county",
+      "description": "Reviews prior-year expenditures and reports to Board",
+      "research_focus": "oversight",
+      "source_ids": [
+        "S04"
+      ]
+    },
+    {
+      "id": "oakland",
+      "label": "City of Oakland",
+      "kind": "government",
+      "group": "city",
+      "description": "HHAP city recipient and regional applicant",
+      "research_focus": "government",
+      "source_ids": [
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "oakland_chs",
+      "label": "Oakland Community Homelessness Services Division",
+      "kind": "government",
+      "group": "city",
+      "description": "City Human Services Department division conducting 2026-28 provider RFQ",
+      "research_focus": "government",
+      "source_ids": [
+        "S12"
+      ]
+    },
+    {
+      "id": "berkeley",
+      "label": "City of Berkeley",
+      "kind": "government",
+      "group": "city",
+      "description": "Municipal government with homelessness funding through property transfer taxes",
+      "research_focus": "government",
+      "source_ids": [
+        "S11"
+      ]
+    },
+    {
+      "id": "coc",
+      "label": "Oakland, Berkeley/Alameda County CoC (EveryOne Home)",
+      "kind": "governance",
+      "group": "county",
+      "description": "HUD-recognized regional Continuum of Care, known as EveryOne Home; HCD lists a CoC allocation separately",
+      "research_focus": "network_governance",
+      "source_ids": [
+        "S01",
+        "S06",
+        "S07"
+      ]
+    },
+    {
+      "id": "abode",
+      "label": "Abode Services",
+      "kind": "provider",
+      "group": "regional",
+      "description": "County partner and contractor for property owner engagement; listed HRC operator",
+      "research_focus": "service_provider",
+      "source_ids": [
+        "S08",
+        "S09",
+        "S10"
+      ]
+    },
+    {
+      "id": "bacs",
+      "label": "Bay Area Community Services (BACS)",
+      "kind": "provider",
+      "group": "regional",
+      "description": "Listed North County/Oakland housing resource access-point operator",
+      "research_focus": "service_provider",
+      "source_ids": [
+        "S08"
+      ]
+    },
+    {
+      "id": "building_futures",
+      "label": "Building Futures",
+      "kind": "provider",
+      "group": "regional",
+      "description": "Listed family and mid-county housing resource access-point operator",
+      "research_focus": "service_provider",
+      "source_ids": [
+        "S08"
+      ]
+    },
+    {
+      "id": "covenant",
+      "label": "Covenant House",
+      "kind": "provider",
+      "group": "regional",
+      "description": "Listed transitional-age-youth housing resource access-point operator",
+      "research_focus": "service_provider",
+      "source_ids": [
+        "S08"
+      ]
+    },
+    {
+      "id": "east_bay_innov",
+      "label": "East Bay Innovations",
+      "kind": "provider",
+      "group": "regional",
+      "description": "Listed HRC access resource for seniors and adults with medical complexities",
+      "research_focus": "service_provider",
+      "source_ids": [
+        "S08"
+      ]
+    },
+    {
+      "id": "hhap5",
+      "label": "HHAP Round 5",
+      "kind": "funding",
+      "group": "state",
+      "description": "California Homeless Housing, Assistance and Prevention Round 5",
+      "research_focus": "funding_program",
+      "source_ids": [
+        "S01"
+      ]
+    },
+    {
+      "id": "hhap6",
+      "label": "HHAP Round 6",
+      "kind": "funding",
+      "group": "state",
+      "description": "California Homeless Housing, Assistance and Prevention Round 6",
+      "research_focus": "funding_program",
+      "source_ids": [
+        "S02"
+      ]
+    },
+    {
+      "id": "alameda_hhap6_region",
+      "label": "Alameda HHAP 6 joint regional award",
+      "kind": "funding",
+      "group": "county",
+      "description": "Joint regional award; do not assign the whole reported amount to each participating institution",
+      "research_focus": "award_pool",
+      "source_ids": [
+        "S02"
+      ]
+    },
+    {
+      "id": "county_measure_w",
+      "label": "Alameda County Measure W (sales tax)",
+      "kind": "funding",
+      "group": "county",
+      "description": "2020-approved half-cent county sales tax; 80% Home Together share",
+      "research_focus": "revenue_source",
+      "source_ids": [
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "home_fund",
+      "label": "Home Together Fund",
+      "kind": "funding",
+      "group": "county",
+      "description": "Measure W-funded Alameda County housing and homelessness initiative",
+      "research_focus": "funding_program",
+      "source_ids": [
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "id": "home_plan",
+      "label": "Home Together strategic plan",
+      "kind": "program",
+      "group": "county",
+      "description": "Countywide homelessness strategic planning framework",
+      "research_focus": "policy",
+      "source_ids": [
+        "S16"
+      ]
+    },
+    {
+      "id": "berkeley_measure_p",
+      "label": "Berkeley Measure P (transfer tax)",
+      "kind": "funding",
+      "group": "city",
+      "description": "2018 voter-approved real property transfer tax supporting homeless services",
+      "research_focus": "revenue_source",
+      "source_ids": [
+        "S11"
+      ]
+    },
+    {
+      "id": "berkeley_measure_w",
+      "label": "Berkeley Measure W (transfer tax, effective 2027)",
+      "kind": "funding",
+      "group": "city",
+      "description": "2024-approved future extension and increase of Berkeley Measure P; NOT county Measure W",
+      "research_focus": "revenue_source",
+      "source_ids": [
+        "S11"
+      ]
+    },
+    {
+      "id": "coordinated_entry",
+      "label": "Alameda County Coordinated Entry System",
+      "kind": "program",
+      "group": "county",
+      "description": "Front door to county homelessness response; managed by County H&H",
+      "research_focus": "program",
+      "source_ids": [
+        "S06",
+        "S07"
+      ]
+    },
+    {
+      "id": "hmis",
+      "label": "Alameda County Homeless Management Information System",
+      "kind": "program",
+      "group": "county",
+      "description": "County HMIS system for service records; public network excludes private client data",
+      "research_focus": "data_system",
+      "source_ids": [
+        "S05",
+        "S07"
+      ]
+    },
+    {
+      "id": "hrc",
+      "label": "Alameda County Housing Resource Center network",
+      "kind": "program",
+      "group": "county",
+      "description": "Regional and population-specific housing resource centers",
+      "research_focus": "program",
+      "source_ids": [
+        "S08"
+      ]
+    },
+    {
+      "id": "property_engagement",
+      "label": "County Property Owner Engagement Program",
+      "kind": "program",
+      "group": "county",
+      "description": "Matches available rental units with people needing housing",
+      "research_focus": "program",
+      "source_ids": [
+        "S09"
+      ]
+    },
+    {
+      "id": "housing_community_supports",
+      "label": "Housing Community Supports (HCS)",
+      "kind": "program",
+      "group": "county",
+      "description": "County housing transition, deposits and tenancy sustaining supports",
+      "research_focus": "program",
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "id": "calaim",
+      "label": "CalAIM",
+      "kind": "funding",
+      "group": "state",
+      "description": "California Advancing and Innovating Medi-Cal program supporting housing services",
+      "research_focus": "funding_program",
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "id": "movein_fund",
+      "label": "Home Together Move-In Assistance Fund",
+      "kind": "program",
+      "group": "county",
+      "description": "Move-in assistance portal operated by Abode",
+      "research_focus": "program",
+      "source_ids": [
+        "S10"
+      ]
+    },
+    {
+      "id": "oakland_rfq",
+      "label": "Oakland 2026–2028 Homelessness Services RFQ",
+      "kind": "program",
+      "group": "city",
+      "description": "Request for qualifications; no contracts implied by publication",
+      "research_focus": "procurement",
+      "source_ids": [
+        "S12"
+      ]
+    },
+    {
+      "id": "hud_coc",
+      "label": "HUD Continuum of Care Program",
+      "kind": "funding",
+      "group": "federal",
+      "description": "Federal program and annual award competition",
+      "research_focus": "funding_program",
+      "source_ids": [
+        "S13"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "E001",
+      "source": "hcd",
+      "target": "hhap5",
+      "relation": "administers_program",
+      "layer": "governance",
+      "date_or_period": "HHAP Round 5",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S01",
+      "source_ids": [
+        "S01"
+      ],
+      "source_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/calich/hhap-5-allocations.pdf",
+      "details": "State HHAP allocation schedule"
+    },
+    {
+      "id": "E002",
+      "source": "hhap5",
+      "target": "alameda_county",
+      "relation": "allocates_to_eligible_jurisdiction",
+      "layer": "funding",
+      "date_or_period": "HHAP Round 5",
+      "value": 13463753.5,
+      "unit": "USD",
+      "amount_type": "allocation",
+      "evidence_class": "documented",
+      "source_id": "S01",
+      "source_ids": [
+        "S01"
+      ],
+      "source_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/calich/hhap-5-allocations.pdf",
+      "details": "Alameda County allocation, not proof of expenditure"
+    },
+    {
+      "id": "E003",
+      "source": "hhap5",
+      "target": "oakland",
+      "relation": "allocates_to_eligible_jurisdiction",
+      "layer": "funding",
+      "date_or_period": "HHAP Round 5",
+      "value": 28446565.83,
+      "unit": "USD",
+      "amount_type": "allocation",
+      "evidence_class": "documented",
+      "source_id": "S01",
+      "source_ids": [
+        "S01"
+      ],
+      "source_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/calich/hhap-5-allocations.pdf",
+      "details": "City of Oakland allocation, not proof of expenditure"
+    },
+    {
+      "id": "E004",
+      "source": "hhap5",
+      "target": "coc",
+      "relation": "allocates_to_eligible_jurisdiction",
+      "layer": "funding",
+      "date_or_period": "HHAP Round 5",
+      "value": 14033347.21,
+      "unit": "USD",
+      "amount_type": "allocation",
+      "evidence_class": "documented",
+      "source_id": "S01",
+      "source_ids": [
+        "S01"
+      ],
+      "source_url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/calich/hhap-5-allocations.pdf",
+      "details": "CoC jurisdiction allocation, not a claim that EveryOne Home as operator directly received the funds"
+    },
+    {
+      "id": "E005",
+      "source": "hcd",
+      "target": "hhap6",
+      "relation": "administers_program",
+      "layer": "governance",
+      "date_or_period": "HHAP Round 6",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S02",
+      "source_ids": [
+        "S02"
+      ],
+      "source_url": "https://www.hcd.ca.gov/about-hcd/newsroom/hhap6-batch2-awards",
+      "details": "State program announcement"
+    },
+    {
+      "id": "E006",
+      "source": "hhap6",
+      "target": "alameda_hhap6_region",
+      "relation": "announces_joint_regional_award",
+      "layer": "funding",
+      "date_or_period": "HHAP Round 6",
+      "value": null,
+      "unit": null,
+      "amount_type": "regional_award_approximate",
+      "evidence_class": "documented",
+      "source_id": "S02",
+      "source_ids": [
+        "S02"
+      ],
+      "source_url": "https://www.hcd.ca.gov/about-hcd/newsroom/hhap6-batch2-awards",
+      "details": "Combined amount is JUST OVER $45.3m; no precise amount or jurisdiction split imported"
+    },
+    {
+      "id": "E007",
+      "source": "alameda_hhap6_region",
+      "target": "alameda_county",
+      "relation": "joint_regional_participant",
+      "layer": "governance",
+      "date_or_period": "HHAP Round 6",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S02",
+      "source_ids": [
+        "S02"
+      ],
+      "source_url": "https://www.hcd.ca.gov/about-hcd/newsroom/hhap6-batch2-awards",
+      "details": "Participates in region; do not treat as separate $45.3m award"
+    },
+    {
+      "id": "E008",
+      "source": "alameda_hhap6_region",
+      "target": "oakland",
+      "relation": "joint_regional_participant",
+      "layer": "governance",
+      "date_or_period": "HHAP Round 6",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S02",
+      "source_ids": [
+        "S02"
+      ],
+      "source_url": "https://www.hcd.ca.gov/about-hcd/newsroom/hhap6-batch2-awards",
+      "details": "Participates in region; do not treat as separate $45.3m award"
+    },
+    {
+      "id": "E009",
+      "source": "alameda_hhap6_region",
+      "target": "coc",
+      "relation": "joint_regional_participant",
+      "layer": "governance",
+      "date_or_period": "HHAP Round 6",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S02",
+      "source_ids": [
+        "S02"
+      ],
+      "source_url": "https://www.hcd.ca.gov/about-hcd/newsroom/hhap6-batch2-awards",
+      "details": "Participates in region; do not treat as separate $45.3m award"
+    },
+    {
+      "id": "E010",
+      "source": "county_measure_w",
+      "target": "home_fund",
+      "relation": "provides_revenue_for",
+      "layer": "funding",
+      "date_or_period": "FY2025–26",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S03",
+      "source_ids": [
+        "S03",
+        "S04"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/measure-w-home-together-fund/",
+      "details": "County Measure W partly funds Home Together; 80% share is specified in county source"
+    },
+    {
+      "id": "E011",
+      "source": "county_bos",
+      "target": "home_fund",
+      "relation": "authorized_allocation",
+      "layer": "funding",
+      "date_or_period": "FY2025–26",
+      "value": 168900000,
+      "unit": "USD",
+      "amount_type": "budget_allocation",
+      "evidence_class": "documented",
+      "source_id": "S03",
+      "source_ids": [
+        "S03"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/measure-w-home-together-fund/",
+      "details": "Board allocated $168.9m; not an expenditure amount"
+    },
+    {
+      "id": "E012",
+      "source": "county_oversight",
+      "target": "county_measure_w",
+      "relation": "reviews_expenditures",
+      "layer": "oversight",
+      "date_or_period": "ongoing",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S04",
+      "source_ids": [
+        "S04"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/program/measures-a-c-and-w/",
+      "details": "Committee reviews prior-year spending and publishes annual report"
+    },
+    {
+      "id": "E013",
+      "source": "county_hh",
+      "target": "home_plan",
+      "relation": "coordinates_planning",
+      "layer": "governance",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S05",
+      "source_ids": [
+        "S05",
+        "S16"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/department/housing-homelessness-services/",
+      "details": "County Home Together planning and system development"
+    },
+    {
+      "id": "E014",
+      "source": "coc",
+      "target": "coordinated_entry",
+      "relation": "sets_governance_policies",
+      "layer": "governance",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S07",
+      "source_ids": [
+        "S07"
+      ],
+      "source_url": "https://everyonehome.org/about/policies/",
+      "details": "CoC committees and Leadership Board review CES policies"
+    },
+    {
+      "id": "E015",
+      "source": "county_hh",
+      "target": "coordinated_entry",
+      "relation": "manages_system",
+      "layer": "governance",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S05",
+      "source_ids": [
+        "S05",
+        "S07"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/department/housing-homelessness-services/",
+      "details": "County H&H manages Coordinated Entry"
+    },
+    {
+      "id": "E016",
+      "source": "county_hh",
+      "target": "hmis",
+      "relation": "manages_system",
+      "layer": "governance",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S05",
+      "source_ids": [
+        "S05",
+        "S07"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/department/housing-homelessness-services/",
+      "details": "County H&H HMIS lead; public-level governance only"
+    },
+    {
+      "id": "E017",
+      "source": "county_hh",
+      "target": "hrc",
+      "relation": "oversees_coordinated_access",
+      "layer": "governance",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S05",
+      "source_ids": [
+        "S05",
+        "S08"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/department/housing-homelessness-services/",
+      "details": "HRC directory documents access-point structure; not individual provider contracts"
+    },
+    {
+      "id": "E018",
+      "source": "hrc",
+      "target": "bacs",
+      "relation": "lists_as_housing_resource_provider",
+      "layer": "services",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S08",
+      "source_ids": [
+        "S08"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/housing-resource-center-directory/",
+      "details": "Listed North County and Oakland access points; no amount reported"
+    },
+    {
+      "id": "E019",
+      "source": "hrc",
+      "target": "abode",
+      "relation": "lists_as_housing_resource_provider",
+      "layer": "services",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S08",
+      "source_ids": [
+        "S08"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/housing-resource-center-directory/",
+      "details": "Listed mid- and south-county access points; no amount reported"
+    },
+    {
+      "id": "E020",
+      "source": "hrc",
+      "target": "building_futures",
+      "relation": "lists_as_housing_resource_provider",
+      "layer": "services",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S08",
+      "source_ids": [
+        "S08"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/housing-resource-center-directory/",
+      "details": "Listed family and mid-county access points; no amount reported"
+    },
+    {
+      "id": "E021",
+      "source": "hrc",
+      "target": "covenant",
+      "relation": "lists_as_housing_resource_provider",
+      "layer": "services",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S08",
+      "source_ids": [
+        "S08"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/housing-resource-center-directory/",
+      "details": "Listed transitional-age-youth access points; no amount reported"
+    },
+    {
+      "id": "E022",
+      "source": "hrc",
+      "target": "east_bay_innov",
+      "relation": "lists_as_housing_resource_provider",
+      "layer": "services",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S08",
+      "source_ids": [
+        "S08"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/housing-resource-center-directory/",
+      "details": "Listed services for seniors and medical complexities; no amount reported"
+    },
+    {
+      "id": "E023",
+      "source": "county_hh",
+      "target": "property_engagement",
+      "relation": "oversees_program",
+      "layer": "governance",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S09",
+      "source_ids": [
+        "S09"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/program/property-owner-engagement-program/",
+      "details": "County page describes county property-owner engagement program"
+    },
+    {
+      "id": "E024",
+      "source": "county_hh",
+      "target": "abode",
+      "relation": "contracts_with",
+      "layer": "services",
+      "date_or_period": "2026 website description",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S09",
+      "source_ids": [
+        "S09"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/program/property-owner-engagement-program/",
+      "details": "County explicitly states H&H contracts with Abode to work with property owners; no contract value listed"
+    },
+    {
+      "id": "E025",
+      "source": "abode",
+      "target": "property_engagement",
+      "relation": "delivers_service",
+      "layer": "services",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S09",
+      "source_ids": [
+        "S09"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/program/property-owner-engagement-program/",
+      "details": "Works with property owners to match available units"
+    },
+    {
+      "id": "E026",
+      "source": "county_hh",
+      "target": "housing_community_supports",
+      "relation": "coordinates_program",
+      "layer": "governance",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S10",
+      "source_ids": [
+        "S10"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/program/housing-community-supports/",
+      "details": "H&H administers partnerships with community-based providers"
+    },
+    {
+      "id": "E027",
+      "source": "calaim",
+      "target": "housing_community_supports",
+      "relation": "funds_program",
+      "layer": "funding",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S10",
+      "source_ids": [
+        "S10"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/program/housing-community-supports/",
+      "details": "County identifies CalAIM as funding context; dollar amount not provided"
+    },
+    {
+      "id": "E028",
+      "source": "county_hh",
+      "target": "movein_fund",
+      "relation": "joint_program_partner",
+      "layer": "governance",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S10",
+      "source_ids": [
+        "S10"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/program/housing-community-supports/",
+      "details": "County announces move-in assistance in partnership with Abode"
+    },
+    {
+      "id": "E029",
+      "source": "abode",
+      "target": "movein_fund",
+      "relation": "operates_portal",
+      "layer": "services",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S10",
+      "source_ids": [
+        "S10"
+      ],
+      "source_url": "https://health.alamedacountyca.gov/program/housing-community-supports/",
+      "details": "Abode operates application portal; not a statement of payments"
+    },
+    {
+      "id": "E030",
+      "source": "oakland",
+      "target": "oakland_chs",
+      "relation": "city_department_relationship",
+      "layer": "governance",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S12",
+      "source_ids": [
+        "S12"
+      ],
+      "source_url": "https://www.oaklandca.gov/Community/The-Unhoused-Community/Request-for-Qualifications-RFQ-for-Homelessness-services-2026-2028",
+      "details": "City Office of Administrator/Human Services Division"
+    },
+    {
+      "id": "E031",
+      "source": "oakland_chs",
+      "target": "oakland_rfq",
+      "relation": "issued_procurement",
+      "layer": "procurement",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S12",
+      "source_ids": [
+        "S12"
+      ],
+      "source_url": "https://www.oaklandca.gov/Community/The-Unhoused-Community/Request-for-Qualifications-RFQ-for-Homelessness-services-2026-2028",
+      "details": "RFQ establishes pool of eligible bidders; no awarded contracts implied"
+    },
+    {
+      "id": "E032",
+      "source": "berkeley_measure_p",
+      "target": "berkeley",
+      "relation": "revenue_source_for_services",
+      "layer": "funding",
+      "date_or_period": "2018–2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S11",
+      "source_ids": [
+        "S11"
+      ],
+      "source_url": "https://berkeleyca.gov/your-government/our-work/bond-revenue-measures/measure-p-w",
+      "details": "Property transfer tax funding for Berkeley homelessness services; estimated average $11m/year, not award to specific provider"
+    },
+    {
+      "id": "E033",
+      "source": "berkeley_measure_w",
+      "target": "berkeley_measure_p",
+      "relation": "extends_and_increases",
+      "layer": "policy",
+      "date_or_period": "effective 2027",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "approved_future",
+      "source_id": "S11",
+      "source_ids": [
+        "S11"
+      ],
+      "source_url": "https://berkeleyca.gov/your-government/our-work/bond-revenue-measures/measure-p-w",
+      "details": "Berkeley Measure W approved 2024, effective Jan 1 2027; distinct from county sales-tax Measure W"
+    },
+    {
+      "id": "E034",
+      "source": "hud",
+      "target": "hud_coc",
+      "relation": "administers_program",
+      "layer": "governance",
+      "date_or_period": "ongoing",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S13",
+      "source_ids": [
+        "S13"
+      ],
+      "source_url": "https://www.hud.gov/program_offices/comm_planning/coc",
+      "details": "HUD administers federal CoC Program"
+    },
+    {
+      "id": "E035",
+      "source": "hud_coc",
+      "target": "coc",
+      "relation": "regional_competition_framework",
+      "layer": "governance",
+      "date_or_period": "2026",
+      "value": null,
+      "unit": null,
+      "amount_type": "",
+      "evidence_class": "documented",
+      "source_id": "S06",
+      "source_ids": [
+        "S06",
+        "S13",
+        "S15"
+      ],
+      "source_url": "https://everyonehome.org/",
+      "details": "Local CoC participates in HUD annual funding competition; not a claim of specific award"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "HHAP Round 5 allocations",
+      "publisher": "California HCD",
+      "url": "https://www.hcd.ca.gov/sites/default/files/docs/grants-and-funding/calich/hhap-5-allocations.pdf",
+      "kind": "public_record",
+      "research_note": "HHAP-5 jurisdiction allocations are eligibility/award ceilings; not evidence of disbursement or expenditure."
+    },
+    {
+      "id": "S02",
+      "title": "HHAP Round 6 regional awards announcement",
+      "publisher": "California HCD",
+      "url": "https://www.hcd.ca.gov/about-hcd/newsroom/hhap6-batch2-awards",
+      "kind": "public_record",
+      "research_note": "Alameda region includes Alameda County, Oakland and CoC; only a combined regional amount is stated."
+    },
+    {
+      "id": "S03",
+      "title": "Measure W Home Together Fund",
+      "publisher": "Alameda County Health",
+      "url": "https://health.alamedacountyca.gov/measure-w-home-together-fund/",
+      "kind": "public_record",
+      "research_note": "FY2025-26 BOS allocation $168.9 million; not a claim of dollars spent."
+    },
+    {
+      "id": "S04",
+      "title": "Measures A, C and W and Citizen Oversight",
+      "publisher": "Alameda County Health",
+      "url": "https://health.alamedacountyca.gov/program/measures-a-c-and-w/",
+      "kind": "public_record",
+      "research_note": "Distinguishes Alameda County Measure W from Berkeley Measure W."
+    },
+    {
+      "id": "S05",
+      "title": "Housing and Homelessness Services department",
+      "publisher": "Alameda County Health",
+      "url": "https://health.alamedacountyca.gov/department/housing-homelessness-services/",
+      "kind": "public_record",
+      "research_note": "H&H coordinates services, oversees coordinated entry and HMIS, describes provider system."
+    },
+    {
+      "id": "S06",
+      "title": "Continuum of Care overview",
+      "publisher": "EveryOne Home",
+      "url": "https://everyonehome.org/",
+      "kind": "public_record",
+      "research_note": "CoC is known as EveryOne Home. Federal CoC competition context."
+    },
+    {
+      "id": "S07",
+      "title": "Continuum of Care policies",
+      "publisher": "EveryOne Home",
+      "url": "https://everyonehome.org/about/policies/",
+      "kind": "public_record",
+      "research_note": "Specifies CoC policy oversight and county management of CES and HMIS."
+    },
+    {
+      "id": "S08",
+      "title": "Housing Resource Center directory",
+      "publisher": "Alameda County Health",
+      "url": "https://health.alamedacountyca.gov/housing-resource-center-directory/",
+      "kind": "public_record",
+      "research_note": "Lists access-point operators; does not establish a contract or grant amount."
+    },
+    {
+      "id": "S09",
+      "title": "Property Owner Engagement program",
+      "publisher": "Alameda County Health",
+      "url": "https://health.alamedacountyca.gov/program/property-owner-engagement-program/",
+      "kind": "public_record",
+      "research_note": "County explicitly states it contracts with Abode."
+    },
+    {
+      "id": "S10",
+      "title": "Housing Community Supports and Move-In Assistance Fund",
+      "publisher": "Alameda County Health",
+      "url": "https://health.alamedacountyca.gov/program/housing-community-supports/",
+      "kind": "public_record",
+      "research_note": "Describes CalAIM services and Abode-operated portal; no grant amount here."
+    },
+    {
+      "id": "S11",
+      "title": "Measures P and W property transfer tax funding",
+      "publisher": "City of Berkeley",
+      "url": "https://berkeleyca.gov/your-government/our-work/bond-revenue-measures/measure-p-w",
+      "kind": "public_record",
+      "research_note": "Berkeley Measure W effective 2027, distinct from Alameda County sales-tax Measure W."
+    },
+    {
+      "id": "S12",
+      "title": "Homelessness services RFQ 2026-28",
+      "publisher": "City of Oakland",
+      "url": "https://www.oaklandca.gov/Community/The-Unhoused-Community/Request-for-Qualifications-RFQ-for-Homelessness-services-2026-2028",
+      "kind": "public_record",
+      "research_note": "Solicitation for future contracting; no provider award implied."
+    },
+    {
+      "id": "S13",
+      "title": "Continuum of Care program overview",
+      "publisher": "HUD",
+      "url": "https://www.hud.gov/program_offices/comm_planning/coc",
+      "kind": "public_record",
+      "research_note": "Program definition; not an individual local award record."
+    },
+    {
+      "id": "S14",
+      "title": "HHAP fiscal dashboard",
+      "publisher": "California HCD",
+      "url": "https://www.hcd.ca.gov/housing-open-data-tools/hhap-dashboard",
+      "kind": "public_record",
+      "research_note": "Contains self-reported cumulative obligations and expenditures; not imported into v0.1."
+    },
+    {
+      "id": "S15",
+      "title": "Local HUD CoC competition",
+      "publisher": "EveryOne Home",
+      "url": "https://everyonehome.org/main/continuum-of-care/hud-coc-nofa/",
+      "kind": "public_record",
+      "research_note": "Local applicant coordination; verify individual HUD recipient awards separately."
+    },
+    {
+      "id": "S16",
+      "title": "Home Together plan and funding",
+      "publisher": "Alameda County Health",
+      "url": "https://health.alamedacountyca.gov/program/home-together/",
+      "kind": "public_record",
+      "research_note": "Countywide plan and funding framework."
+    }
+  ]
+}
