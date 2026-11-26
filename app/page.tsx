@@ -96,7 +96,7 @@ export default function Home() {
           Research exploring the forces that shape our world.
         </h2>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
           {/* Project 1: Quantifying Welfare */}
           <div className="border border-gray-200 p-8 md:p-10">
@@ -144,6 +144,29 @@ export default function Home() {
             </p>
           </a>
 
+{/* Project 3: The Homelessness System */}
+<a
+  href="/projects/homelessness"
+  className="group block border border-gray-200 p-8 transition-all duration-200 hover:border-amber-600 hover:shadow-lg md:p-10"
+>
+  <p className="text-sm uppercase tracking-widest text-amber-700">
+    Public Policy · Social Network Analysis
+  </p>
+
+  <h3 className="mt-5 text-2xl font-semibold tracking-tight">
+    The Homelessness System
+  </h3>
+
+  <p className="mt-5 leading-7 text-gray-600">
+    Following public funding, government institutions,
+    nonprofit organizations, and service providers
+    shaping the homelessness response in Alameda County.
+  </p>
+  
+  <p className="mt-8 text-sm font-semibold text-amber-700 group-hover:underline">
+    Explore the Research →
+  </p>
+</a>
         </div>
       </section>
 
