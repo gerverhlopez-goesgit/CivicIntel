@@ -1,3 +1,5 @@
+import InteractiveHeroNetwork from "./components/InteractiveHeroNetwork";
+
 // Civic Intelligence Lab — Homepage 2.0
 // Replace ONLY app/page.tsx with this file.
 // No new dependencies are required.
@@ -52,52 +54,6 @@ function ArrowIcon({ diagonal = false }: { diagonal?: boolean }) {
     <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" className="h-4 w-4" stroke="currentColor" strokeWidth="1.8">
       <path d="M4 12h16m-7-7 7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
-  );
-}
-
-// A conceptual diagram only. No research claims are represented by these links.
-function HeroNetwork() {
-  const connections = [
-    [270, 215, 101, 83], [270, 215, 425, 83], [270, 215, 79, 296],
-    [270, 215, 438, 312], [270, 215, 282, 49], [270, 215, 284, 381],
-    [101, 83, 282, 49], [425, 83, 438, 312], [79, 296, 284, 381],
-    [101, 83, 79, 296], [282, 49, 425, 83], [284, 381, 438, 312],
-    [101, 83, 438, 312], [79, 296, 425, 83],
-  ];
-  const satellites = [
-    { x: 101, y: 83, color: "#75B4AA", label: "Institutions", dx: -56, dy: -23 },
-    { x: 425, y: 83, color: "#D99B80", label: "Policy", dx: 19, dy: -11 },
-    { x: 79, y: 296, color: "#91A8D1", label: "Communities", dx: -25, dy: 34 },
-    { x: 438, y: 312, color: "#75B4AA", label: "Markets", dx: 16, dy: 28 },
-    { x: 282, y: 49, color: "#D99B80", label: "Evidence", dx: 18, dy: -17 },
-    { x: 284, y: 381, color: "#91A8D1", label: "Research", dx: 14, dy: 24 },
-  ];
-
-  return (
-    <div className="relative mx-auto w-full max-w-[570px]" aria-hidden="true">
-      <div className="absolute inset-8 rounded-full bg-[#CBA66E]/5 blur-3xl" />
-      <svg viewBox="0 0 540 430" className="relative h-auto w-full" role="presentation">
-        <circle cx="270" cy="215" r="178" fill="none" stroke="#56717A" strokeWidth="1" strokeDasharray="3 10" opacity="0.42" />
-        <circle cx="270" cy="215" r="111" fill="none" stroke="#56717A" strokeWidth="1" opacity="0.38" />
-        {connections.map(([x1, y1, x2, y2], index) => (
-          <line key={index} x1={x1} y1={y1} x2={x2} y2={y2} stroke={index < 6 ? "#D4AB72" : "#7899A3"} strokeWidth={index < 6 ? "1.6" : "1"} opacity={index < 6 ? "0.56" : "0.26"} />
-        ))}
-        {satellites.map((node) => (
-          <g key={node.label}>
-            <circle cx={node.x} cy={node.y} r="25" fill={node.color} opacity="0.10" />
-            <circle cx={node.x} cy={node.y} r="10" fill={node.color} />
-            <circle cx={node.x} cy={node.y} r="3" fill="#10232D" />
-            <text x={node.x + node.dx} y={node.y + node.dy} fill="#C9D7D9" fontSize="13" letterSpacing="0.2">{node.label}</text>
-          </g>
-        ))}
-        <circle cx="270" cy="215" r="65" fill="#D4AB72" opacity="0.09" className="motion-safe:animate-pulse" />
-        <circle cx="270" cy="215" r="45" fill="#D4AB72" />
-        <text x="270" y="220" fill="#10232D" fontSize="15" fontWeight="700" textAnchor="middle">CivicIntel</text>
-      </svg>
-      <p className="mt-3 text-center text-[10px] uppercase leading-relaxed tracking-[0.18em] text-[#88A2A7]">
-        An illustration of interconnected systems
-      </p>
-    </div>
   );
 }
 
@@ -196,8 +152,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="hidden lg:block">
-            <HeroNetwork />
+          <div className="mt-6 lg:mt-0">
+            <InteractiveHeroNetwork />
           </div>
         </div>
         <div className="border-t border-[#344B55]">
